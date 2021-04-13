@@ -1,15 +1,24 @@
+// How to create new project
+// npx create-react-app project-name
+
 import React, {Component} from 'react'
 import './App.css'
 import Article from './Article'
+import Counter from './Counter'
 import Featured from './Featured'
+import Form from './Form'
 import FriendsList from './Friends'
 import Greet from './Greet'
 import {Menu, Footer} from './Menu'
 import Name from './Name'
+import Switch from './Switch'
 import TaskList from './TaskList'
 
 class App extends Component {
-render() {
+
+
+
+  render() {
   const friends = [
     {name: "Logan"},
     {name: "Nan"},
@@ -29,8 +38,12 @@ render() {
   return (
     <div className="total">
       <Menu />
+      <Counter />
+    <Form />
 <Featured />
 <Article articles = {articles} />
+
+<Switch />
     <Footer />
     </div>
   )
